@@ -9,8 +9,28 @@ body {
 a, a:visited {
   color: #36435A; }
 
-#usa_dot_gov_header a, #usa_dot_gov_header a:visited {
+.usa-site-header {
+  background-color: #36435A;
   color: #fff; }
+  .usa-site-header h1 {
+    font-weight: 300;
+    float: left;
+    margin: 20px; }
+  .usa-site-header a, .usa-site-header a:visited {
+    color: #fff; }
+  .usa-site-header #about {
+    font-size: 1em;
+    font-weight: 300;
+    margin: 38px 20px 0;
+    float: right;
+    text-decoration: none;
+    border: none; }
+    .usa-site-header #about:hover {
+      text-decoration: underline; }
+  .usa-site-header #color_bar {
+    background: #3A96B7;
+    height: 6px;
+    clear: both; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
@@ -31,32 +51,6 @@ h3 {
 h4 {
   font-size: 19px;
   line-height: 1.3em/25px; }
-
-header {
-  background: #36435A;
-  color: white; }
-  header .header_container {
-    padding: 0 1em; }
-  header #color_bar {
-    background: #3A96B7;
-    height: 6px; }
-  header h1 {
-    font-weight: 300; }
-    header h1 a {
-      font-weight: 300;
-      color: white;
-      text-decoration: none; }
-    header h1 a:hover {
-      text-decoration: underline; }
-  header #about {
-    font-size: 1em;
-    font-weight: 300;
-    padding-top: 2em;
-    text-align: right;
-    text-decoration: none;
-    border: none; }
-  header #about:hover {
-    text-decoration: underline; }
 
 section {
   background: #fff;

@@ -37,9 +37,37 @@ a, a:visited {
   color: $dark_blue;
 }
 
-#usa_dot_gov_header {
+.usa-site-header {
+
+  background-color: $dark_blue;
+  color: $white;
+  
+  h1 {
+    font-weight: $bold_weight;
+    float: left;
+    margin: 20px;
+  }
+
   a, a:visited {
     color: $white;
+  }
+
+  #about {
+    font-size: 1em;
+    font-weight: 300;
+    margin: 38px 20px 0;
+    float: right;
+    text-decoration: none;
+    border: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  #color_bar {
+    background: $light_blue;
+    height: 6px;
+    clear: both;
   }
 }
 
@@ -66,42 +94,6 @@ h3 {
 h4 {
   font-size: 19px;
   line-height: 1.3em/25px;
-}
-
-header {
-  background: $dark_blue;
-  color: white;
-
-  .header_container {
-    padding: 0 1em;
-  }
-
-  #color_bar {
-    background: $light_blue;
-    height: 6px;
-  }
-
-  h1 {
-    font-weight: $bold_weight;
-    a {
-      font-weight: 300;
-      color: white;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  }
-
-  #about {
-    font-size: 1em;
-    font-weight: 300;
-    padding-top: 2em;
-    text-align: right;
-    text-decoration: none;
-    border: none;
-  }
-  #about:hover {text-decoration: underline;}
 }
 
 section {
