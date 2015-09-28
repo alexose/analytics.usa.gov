@@ -63,9 +63,11 @@ permalink: /
 
   <body>
 
-    <header id="usa_dot_gov_header">
-      <div class="header_container">
+    <div id="usa_dot_gov_header" class="usa-grid-full">
+      <div class="usa-grid-one-half">
         <h1>analytics<a href="http://www.usa.gov">.usa.gov</a></h1>
+      </div>
+      <div class="usa-grid-one-half">
         <a id="about" href="#explanation">About this site</a>
       </div>
       <div id="color_bar"></div>
@@ -93,7 +95,7 @@ permalink: /
       </section>
       -->
 
-      <div id="main_data">
+      <div id="main_data" class="usa-grid-full">
         <section id="realtime"
           data-block="realtime"
           data-source="{{ site.data_url }}/realtime.json"
@@ -122,7 +124,7 @@ permalink: /
           There were <span id="total_visitors" class="data">...</span> visits over the past 90 days.
         </section>
 
-        <section id="devices" class="three_column"
+        <section id="devices" class="usa-width-one-third"
           data-block="devices"
           data-source="{{ site.data_url }}/devices.json">
           <h4>Devices</h4>
@@ -132,7 +134,7 @@ permalink: /
           </figure>
         </section>
 
-        <section id="browsers" class="three_column">
+        <section id="browsers" class="usa-width-one-third">
           <h4>Browsers</h4>
 
           <figure id="chart_browsers"
@@ -151,7 +153,7 @@ permalink: /
           </figure>
         </section>
 
-        <section id="operating_systems" class="three_column">
+        <section id="operating_systems" class="usa-width-one-third">
           <h4>Operating Systems</h4>
 
           <figure id="chart_os"
